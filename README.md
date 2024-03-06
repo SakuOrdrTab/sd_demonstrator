@@ -1,10 +1,10 @@
-##Stable Diffusion reference
+<H1>Stable Diffusion reference</H1>
 
 This script makes images from a prompt with different number of passes and prompt strength. It's purpose is to narrow down parameters for your image generation in a more sophisticated framework.
 
 I don't know, what the actual systemn requirements for running stable diffusion are, but I recommend a nvidia graphics card with at least 10 GB of memory.
 
-# Installation
+<H2>Installation</H2>
 
 Clone the repository in your preferred subfolder. Create a virtual environment there, for example in windows, this will create a subfolder ".venv" with your virtual environment:
 
@@ -34,7 +34,7 @@ and only after that the pytorch, which also needs some arguments according to yo
 
 See https://pytorch.org/get-started/locally/
 
-# Usage
+<H2>Usage</H2>
 
 When the dependancies are set, you should be able to run (with virtual environment on) this with either on terminal with the python interpreter, or from your favourite IDE.
 
