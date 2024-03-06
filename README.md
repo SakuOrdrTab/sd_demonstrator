@@ -12,7 +12,7 @@ Clone the repository in your preferred subfolder. Create a virtual environment t
 
 Activate the virtual environment:
 
-`.\Scripts\activate`
+`.\.venv\Scripts\activate`
 
 Install the required dependancies:
 
