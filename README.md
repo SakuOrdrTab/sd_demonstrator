@@ -24,7 +24,7 @@ You are ready to run the python script, assuming python is in the path etc.:
 
 A couple of remarks; Usually for example vscode can manage quite well installation and virtual environments. When you clone the project and create a venv from vscode's command palette, it suggests installing the dependancies from the detected "requirements.txt" and this goes usually smoothly. However, the dependancies can be really tricky and even with the aforementioned pip installation you may run into troubles. Sometimes it is easier and more robust just to install modules, especially pytorch and diffusers manually one by one. At least I seem to get a conflict with current (6.3.2024) modules, if I don't install diffusers first
 
-´pip install diffusers["torch"] transformers`
+`pip install diffusers["torch"] transformers`
 
 See https://huggingface.co/docs/diffusers/installation
 
@@ -42,4 +42,4 @@ When the dependancies are set, you should be able to run (with virtual environme
 
 <B>img2img_demonstrator</B> creates a similar matrix with a base, or initial image. The second parameter is prompt guidance scale
 
-The idea is to relatively quickly get a low-res mapping of useful parameters for more refined image generation, I think that is much more easy to do in automatic1111's webui or some other sophisticated tool. The script saves made images for future reference to subfolders. Note that at least using runway's stable diffusion 1.5 currently the setting of schedulers does not work as I would expect. To my knowledge, there is already a fix in the source code, but I guess it will take some time to reach pypi and thus reach general crowd. Of course, diffusers can be cloned from their repo, but this was too much of a hassle to me, at least. Ping me, if you find another way to change schedulers with current modules. As with schedulers, the actual model and checkpoints can be changed, too, in the model initialization.
+The idea is to relatively quickly get a low-res mapping of useful parameters for more refined image generation, I think that is much more easy to do in <I>automatic1111</I>'s webui (https://github.com/AUTOMATIC1111/stable-diffusion-webui) or some other sophisticated tool. The script saves made images for future reference to subfolders. Note that at least using runway's stable diffusion 1.5 currently the setting of schedulers does not work as I would expect. To my knowledge, there is already a fix in the source code, but I guess it will take some time to reach pypi and thus reach general crowd. Of course, diffusers can be cloned from their repo, but this was too much of a hassle to me, at least. Ping me, if you find another way to change schedulers with current modules. As with schedulers, the actual model and checkpoints can be changed, too, in the model initialization.
