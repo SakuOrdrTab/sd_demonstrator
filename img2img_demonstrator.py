@@ -129,6 +129,7 @@ class ImageStorage:
         """        
         # Create the image from initialized prompt
         print(f"creating pic with image strentgh {strength} and {guidance} prompt guidance")
+        torch.manual_seed(66)  # Set the seed for reproducibility
         image = self._pipe(self._prompt_string,
                            image=self._init_image,
                            strength=strength,
